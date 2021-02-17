@@ -125,7 +125,7 @@ favcontainer.appendChild(favMeal);
 searchBtn.addEventListener("click",async () =>{
     // clear container before another serach
     mealsEl.innerHTML = " ";
-    const search = searchBtn.value;
+    const search = searchTerm.value;
     const meals = await getMealBySearch(search);
     if(meals){
         meals.forEach((meal) => {
